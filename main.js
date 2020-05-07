@@ -1,7 +1,12 @@
-function assegna numero{
-    $( ".quadrato" ).append( 'genera_random' )
-}
+function assegna_numero(){
+    $( ".quadrato" ).each(function(){
+        var numero = genera_random(1,10)
+        console.log(numero);
+        $(this).append(numero);
+    });
 
+}
+assegna_numero();
 
 
 
